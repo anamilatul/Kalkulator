@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6D7BB0B6"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingRight="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/kalkulator"
+        android:textAlignment="center"
+        android:textColor="#024750"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtAngka1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="#C3BEBE"
+        android:ems="10"
+        android:hint="@string/hint1"
+        android:inputType="number"
+        android:textSize="20sp"/>
+
+    <RadioGroup
+        android:id="@+id/rbGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioTambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tambah"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radioKurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kurang"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radioKali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kali"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radioBagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bagi"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edtAngka2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#C3BEBE"
+        android:ems="10"
+        android:hint="@string/hint1"
+        android:inputType="number"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#1C92A1"
+        android:onClick="btnHitung"
+        android:text="@string/hitung"
+        android:textSize="17sp"
+        app:cornerRadius="30sp" />
+
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/hint1"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#C33F35"
+        android:onClick="remove"
+        android:text="@string/delete"
+        android:textSize="17sp"
+        app:cornerRadius="30sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

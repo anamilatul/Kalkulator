@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Kalkulator</string>
+    <string name="hint1">0</string>
+    <string name="tambah">Tambah</string>
+    <string name="kurang">Kurang</string>
+    <string name="kali">Kali</string>
+    <string name="bagi">Bagi</string>
+    <string name="hitung">Hitung</string>
+
+    <string name="shared_key">kalkulatorKey</string>
+    <string name="calcHistory_key">CalcHistoryKey</string>
+    <string name="strCalcHistory">History</string>
+    <string name="kalkulator">Kalkulator</string>
+    <string name="delete">Delete</string>
+</resources>
